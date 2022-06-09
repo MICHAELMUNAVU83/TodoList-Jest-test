@@ -100,7 +100,6 @@ class AddRemoveTask {
       this.newTask();
     }
   }
-  
 
   pageEvents() {
     // mark item as completed

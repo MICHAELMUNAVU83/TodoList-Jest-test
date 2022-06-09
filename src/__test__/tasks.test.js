@@ -54,4 +54,3 @@ describe('add and delete', () => {
     expect(document.querySelector('.task-container').children.length).toBe(3);
   });
 });
-
