@@ -57,7 +57,7 @@ body {
   width: 100%;
 }
 
-.list-header>h1 {
+.list-header > h1 {
   letter-spacing: 0.1rem;
   font-family: 'Merriweather', serif;
   font-size: 20px;
@@ -163,7 +163,7 @@ footer {
     font-size: 1.1rem;
   }
 
-  .list-header>h1 {
+  .list-header > h1 {
     font-size: 1.4rem;
   }
 

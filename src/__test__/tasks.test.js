@@ -19,8 +19,8 @@ document.body.innerHTML = `
       <button type="button" id="clear-btn">Clear all completed</button>
     </div>
 `;
-describe('add and delete', () => {
-  test('add task', () => {
+describe('add and delete task', () => {
+  test('add task functionality', () => {
     // add two new tasks using the addNewTask method
     const AddTask = new AddRemoveTask();
     AddTask.addNewTask('test');
@@ -36,7 +36,7 @@ describe('add and delete', () => {
     expect(localStorage).not.toBe(null);
   });
 
-  test('delete task', () => {
+  test('delete task functionality', () => {
     const removeTask = new AddRemoveTask();
     // add three extra tasks. Total is now five
     removeTask.addNewTask('test');
@@ -54,4 +54,3 @@ describe('add and delete', () => {
     expect(document.querySelector('.task-container').children.length).toBe(3);
   });
 });
-
