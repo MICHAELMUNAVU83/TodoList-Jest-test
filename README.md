@@ -1,3 +1,4 @@
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## JEST TESTING
@@ -28,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Robertson Akpon**
+👤 **Robertson Akpan**
 
 
 👤 **Michael Munavu**
@@ -54,3 +55,6 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+=======
+
+
