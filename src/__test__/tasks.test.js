@@ -54,6 +54,7 @@ describe('add and delete task', () => {
     expect(document.querySelector('.task-container').children.length).toBe(3);
   });
 });
+
 describe('edit and update status', () => {
   test('edit a task', () => {
     const edit = new AddRemoveTask();
@@ -65,4 +66,24 @@ describe('edit and update status', () => {
     expect(edit.store[2].description).toMatch(/edited/);
   });
 
+  test('item is completed', () => {
+    const update = new AddRemoveTask();
+
+    // update the status of task on index 1
+    update.markItemAsComplete(1, update.store);
+
+    // check if the task is completed
+    expect(update.store[1].completed).toBe(true);
+  });
+
+  test('clear all completed', () => {
+    const completed = new AddRemoveTask();
+    // we had three tasks left and we marked one as complete
+
+    // clear all completed task
+    completed.clearCompletedTasks();
+
+    // check if the remaining task is two
+    expect(completed.store.length).toBe(2);
+  });
 });
