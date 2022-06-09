@@ -54,3 +54,15 @@ describe('add and delete task', () => {
     expect(document.querySelector('.task-container').children.length).toBe(3);
   });
 });
+describe('edit and update status', () => {
+  test('edit a task', () => {
+    const edit = new AddRemoveTask();
+
+    // edit the task on index two
+    edit.editTask(2, 'edited this task');
+
+    // check if the edit input matches the regex espression
+    expect(edit.store[2].description).toMatch(/edited/);
+  });
+
+});
